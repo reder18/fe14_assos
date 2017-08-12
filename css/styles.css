@@ -189,6 +189,10 @@ input::-webkit-input-placeholder {
 	line-height: 19px;
 }
 
+::-moz-placeholder          {color:#fff;}
+:-moz-placeholder           {color:#fff;}
+:-ms-input-placeholder      {color:#fff;}
+
 .form_consultation p .last_form {
 	margin-bottom:33px;
 }
