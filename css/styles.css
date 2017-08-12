@@ -7,8 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: black;
-	font: normal 27px/48px 'Times New Romain', serif;
-	background: #f00;
+	font: normal 19px/25px 'Scada', 'Times New Romain', sans-serif;
 }
 
 .clr:after {
@@ -19,16 +18,18 @@ body {
 
 p {
 	margin: 0;
-	padding: 20px 0;
+	padding:0;
+	font-size: 19px;
+	line-height: 25px;
 }
 
 a {
-	color: #ff0000;
-	text-decoration: underline;
+	color: #000;
+	text-decoration: none;
 }
 
 a:hover {
-	color: #00ff00;
+	color: #blue;
 }
 
 a img {
@@ -43,9 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	padding: 220px 0 24px;
-	font-size: 90px;
-	position: relative;
+	padding: 20px 0 24px;
 }
 
 h2 {
@@ -101,19 +100,134 @@ em {
 }
 
 #mainwrapper {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	min-width: 2140px;
-	background: #fff;
+	min-width: 970px;
 }
 
 .resize {
-	position: relative;
 	margin: 0 auto;
-	width: 2100px;
-	padding: 0 20px;
+	width: 930px;
 }
 
-/* your styles */
+.questions {
+	background:url(../images/bg.jpg) no-repeat center center;
+	background-size:cover;
+	min-height:816px;
+}
 
+.form_consultation {
+	width: 360px;
+	text-align:center;
+	padding-top: 126px;
+  float: right;
+  padding-right: 46px;
+  position:relative;
+  z-index:5;
+}
+
+.form_consultation:before {
+	display:block;
+	position:absolute;
+	content:"";
+	background:url(../images/bg_form.png) no-repeat center center;
+	width:435px;
+	height:541px;
+	top:90px;
+	left:-36px;
+	z-index:-1;
+}
+
+.form_consultation:after {
+	display:block;
+	content:"";
+	clear:both;
+}
+
+.form_consultation:after {
+	position:absolute;
+	display:block;
+	content:"";
+	background:url(../images/img_rings.png)no-repeat center center;
+	width:545px;
+	height:230px;
+	top: 581px;
+  left: -86px;
+}
+
+.form_consultation .global_p {
+	font-size: 19px;
+	line-height: 25px;
+	color:#380B1A;
+	padding-bottom:25px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+.form_consultation p .white_text {
+	font-size: 36px;
+	line-height: 47px;
+	color:#fff;
+}
+
+.form_consultation p .big_text {
+	font-size: 29px;
+	line-height: 38px;
+}
+
+.form_consultation p input {
+	border:none;
+	border-radius:4px;
+	background:#5E7693;
+	height:50px;
+	width: 280px;
+  padding-left: 63px;
+  margin-bottom: 12px;
+}
+
+input::-webkit-input-placeholder {
+	color:#fff;
+	font-size: 15px;
+	line-height: 19px;
+}
+
+.form_consultation p .last_form {
+	margin-bottom:33px;
+}
+
+.form_consultation p .one_form, .two_form, .three_form{
+	position:relative;
+}
+
+
+.form_consultation p .one_form:before, .two_form:before, .three_form:before {
+	position:absolute;
+	display:block;
+	content:"";
+	background:url(../images/icon_form_man.png) no-repeat center center;
+	width:15px;
+	height:15px;
+	top:6px;
+	left:25px;
+}
+
+.two_form:before {
+	background:url(../images/icon_form_phone.png) no-repeat center center;	
+}
+
+.three_form:before {
+	background:url(../images/icon_form_mail.png) no-repeat center center;	
+}
+
+.form_consultation a {
+	width:343px;
+	height:50px;
+	background:#FFFDD1;
+	display:block;
+	border-radius:4px;
+	font-size: 22px;
+	line-height: 50px;
+	text-align:center;
+	text-transform:uppercase;
+	color:#3C4053;
+	box-shadow:0 4px 0 #C8D5B7;
+	margin:0 auto;
+}
