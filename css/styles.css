@@ -1,119 +1,343 @@
 html {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	color: black;
-	font: normal 27px/48px 'Times New Romain', serif;
-	background: #f00;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font: normal 22px/32px 'Scada', 'Times New Romain', serif;
+    background: #fff;
 }
 
 .clr:after {
-	content: "";
-	display: block;
-	clear: both;
+    content: "";
+    display: block;
+    clear: both;
 }
 
 p {
-	margin: 0;
-	padding: 20px 0;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-	color: #ff0000;
-	text-decoration: underline;
+    color: #1f1d1e;
+    text-decoration: none;
 }
 
 a:hover {
-	color: #00ff00;
+    color: #1f1d1e;
 }
 
 a img {
-	border: none;
+    border: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	padding: 0;
-	font-weight: normal;
-	color: aqua;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    color: aqua;
 }
 
 h1 {
-	padding: 220px 0 24px;
-	font-size: 90px;
-	position: relative;
+    padding: 220px 0 24px;
+    font-size: 90px;
+    position: relative;
 }
 
 h2 {
-	padding: 0 0 75px;
+    padding: 0 0 75px;
 }
 
 .fl {
-	float: left;
+    float: left;
 }
 
 .fr {
-	float: right;
+    float: right;
 }
 
 .fn {
-	float: none;
+    float: none;
 }
 
 .tal {
-	text-align: left;
+    text-align: left;
 }
 
 .tac {
-	text-align: center;
+    text-align: center;
 }
 
 .tar {
-	text-align: right;
+    text-align: right;
 }
 
 .ucase {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .lcase {
-	text-transform: none;
+    text-transform: none;
 }
 
 .bold {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .italic {
-	font-style: italic;
+    font-style: italic;
 }
 
 strong {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 em {
-	font-style: italic;
+    font-style: italic;
 }
 
 #mainwrapper {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	min-width: 2140px;
-	background: #fff;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-width: 1110px;
+    background: #fff;
 }
 
 .resize {
-	position: relative;
-	margin: 0 auto;
-	width: 2100px;
-	padding: 0 20px;
+    position: relative;
+    margin: 0 auto;
+    width: 1070px;
+    padding: 0 20px;
 }
+
+
 
 /* your styles */
 
+header {
+    margin-bottom: 100px;
+}
+
+.container_fluid {
+    width: 100%;
+    background-color: #3a3f52;
+}
+
+.container {
+    width: 930px;
+    margin: 0 auto;
+}
+
+.logo_header {
+    padding-top: 25px;
+    float: left;
+    position: relative;
+    text-indent: -9900px;
+}
+.logo_header:after {
+    content: "";
+    display: block;
+    width: 153px; 
+    height: 36px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background: url(../images/sprite_assos_header.jpg);
+    background-position: 0 0;
+}
+
+.header_franchise {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 250px;
+    float: left;
+    padding: 25px 0 0 315px;
+}
+
+.pnone_number {
+    text-align: right;
+    padding: 20px 0 13px;
+    float: right;
+}
+
+.phone_icon a {
+    position: relative;
+}
+
+.phone_icon a:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url(../images/sprite_assos_header.jpg)no-repeat left top;
+    left: -24px;
+    top: 6px;
+    background-position: -210px 0;
+}
+
+.buttons_header a {
+    background: #309dcf;
+    display: inline-block;
+    padding: 6px 11px 8px 13px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.background_header {
+    background-color: #3a3f52;
+    background-image: url(../images/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: -20px 0;
+    background-size: contain;
+    position: relative;
+    
+}
+.background_header:after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    border-bottom: 15px solid rgba(255, 255, 255, 0.5);
+    top: 713px;
+}
+
+.header_container {
+    width: 930px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header_container h2 {
+    color: #fff;
+    padding: 38px 0 0;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 60px;
+}
+
+.header_container p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 34px;
+    line-height: 45px;
+}
+
+.blue_form {
+    background-color: #82add5;
+    width: 370px;
+    float: right;
+    margin: 60px 0;
+    position: relative;
+}
+
+.blue_form h2 {
+    padding: 0;
+}
+
+.blue_form p {
+    font-size: 19px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.blue_form:before {
+    content: "";
+    display: block;
+    width: 386px;
+    height: 483px;
+    border-top: 4px solid #82add5;
+    border-left: 4px solid #82add5;
+    position: absolute;
+    top: -11px;
+    left: -10px;
+}
+.blue_form:after {
+    content: "";
+    display: block;
+    width: 383px;
+    height: 479px;
+    border-bottom: 4px solid #82add5;
+    border-right: 4px solid #82add5;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+}
+
+.formes p label input {
+    padding: 15px 0 15px 60px;
+    margin: 7px 0 0 17px;
+    display: block;
+    background-color: #5e7693;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    width: 275px;
+   
+}
+.formes p label {
+     position: relative;
+}
+.formes p label:after{
+    content:"";
+    display: block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: -145px;
+    top: -34px;
+    background: url(../images/sprite_assos_header.jpg) no-repeat left top;
+}
+.formes p label.name:after{
+    background-position: -173px -1px;
+}
+.formes p label.phone:after{
+    background-position: -192px -1px;
+}
+.formes p label.mail:after{
+    background-position: -154px -1px;
+}
+
+.formes {
+    padding-top: 35px;
+}
+
+.blue_form input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.header_container form p {
+    color: #380b1a;
+}
+.buttons_form {
+    display: inline-block;
+    margin: 30px 0 50px;
+}
+.buttons_form a {
+    width: 310px;
+    background: #fffdd1;
+    display: inline-block;
+    padding: 6px 11px 8px 13px;
+    color: #3a3f52;
+    font-size: 25px;
+    line-height: 36px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 rgb(200, 213, 183);
+}
