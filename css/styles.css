@@ -19,7 +19,7 @@ body {
 
 p {
 	margin: 0;
-	padding: 20px 0;
+	padding:;
 }
 
 a {
@@ -34,6 +34,12 @@ a:hover {
 a img {
 	border: none;
 }
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
@@ -47,7 +53,9 @@ h1 {
 	position: relative;
 }
 
+
 h2 { padding: 70px 0 40px; font-size: 55px; line-height: 71px; text-transform: uppercase; color:#303445;}
+
 
 .fl {
 	float: left;
@@ -106,19 +114,101 @@ ol { margin: 0;}
 	min-width: 980px;
 	background: #fff;
 }
-
+section:before{
+	content: ""; 
+   	position: absolute;
+   	left: 0;
+   	bottom: 0;
+	width: 100%;
+	height: 15px;
+	background: rgba(58, 63, 82, 0.5);
+}
 .resize {
 	position: relative;
 	margin: 0 auto;
 	width: 940px;
 	padding: 0 20px;
 }
+.mini_resize{
+	width: 720px;
+	margin: 0 auto;
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#about_brand{
+	background: url(../images/bg_frosted.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+	padding-bottom: 70px;
+}
+.box_cir li{
+	text-transform: uppercase;
+	display: block;
+	position: relative;
+	width: 33.3%;
+	box-sizing: border-box;
+	padding: 24px 15px;
+	margin-bottom: 15px;
+	font-size: 22px;
+	line-height: 25px;
+	font-weight: 300;
+}
 
-/* your styles */
+.box_cir li:before{
+	content: ""; 
+   	position: absolute;
+	width: 132px;
+	height: 132px;
+	display: block;
+	left: 50%;
+	margin-left: -66px;
+    top: 0;
+	background: url(../images/sprite.png) no-repeat left top; 
+}
+.box_cir li:nth-child(2):before{
+	background-position: -132px 0; 
+}
+
+.box_cir li:nth-child(3):before{
+	background-position: -267px 0; 
+}
+
+.box_cir li:nth-child(4):before{
+	background-position: 0 -132px; 
+}
+
+.box_cir li:nth-child(5):before{
+	background-position: -132px -132px; 
+}
+.box_cir li:nth-child(6):before{
+	background-position: -267px -132px; 
+}
+.box_cir li:first-line{
+	font-size: 70px;
+	line-height: 90px;
+	font-weight: bold;
+	display: block;
+}
+
+.box_cir li strong{
+	text-transform: uppercase;
+	display: block;
+	font-size: 32px;
+	line-height: 42px;
+	padding-top: 30px;
+	font-weight: bold;
+}
 
 
-
-
+.box_cir li.chang_size1:first-line{
+	font-size: 62px;
+}
+.box_cir li.chang_size2:first-line{
+	font-size: 34px;
+}
 
 #advantages { position: relative; padding-bottom: 65px; background: url("../images/bg_advantages_left.jpg") no-repeat left center, url("../images/bg_advantages_right.jpg") no-repeat right center; background-color: #fffeea; background-size: contain, contain;}
 #advantages:before { content: ""; position: absolute; bottom: 0; left: 0; height: 15px; width: 100%; background-color: rgba(58,63,82,0.5);}
