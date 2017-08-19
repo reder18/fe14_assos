@@ -7,8 +7,8 @@ body {
 	margin: 0;
 	padding: 0;
 	color: black;
-	font: normal 27px/48px 'Times New Romain', serif;
-	background: #f00;
+	font: normal 22px/28px 'Scada', Arial, Helvetica serif;
+	background: #fff;
 }
 
 .clr:after {
@@ -23,12 +23,12 @@ p {
 }
 
 a {
-	color: #ff0000;
+	color: #1f1d1e;
 	text-decoration: underline;
 }
 
 a:hover {
-	color: #00ff00;
+	color: #3a3f52;
 }
 
 a img {
@@ -38,8 +38,7 @@ a img {
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
-	font-weight: normal;
-	color: aqua;
+	font-weight: bold;
 }
 
 h1 {
@@ -48,9 +47,7 @@ h1 {
 	position: relative;
 }
 
-h2 {
-	padding: 0 0 75px;
-}
+h2 { padding: 70px 0 40px; font-size: 55px; line-height: 71px; text-transform: uppercase; color:#303445;}
 
 .fl {
 	float: left;
@@ -100,20 +97,36 @@ em {
 	font-style: italic;
 }
 
+ol { margin: 0;}
+
 #mainwrapper {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	min-width: 2140px;
+	min-width: 980px;
 	background: #fff;
 }
 
 .resize {
 	position: relative;
 	margin: 0 auto;
-	width: 2100px;
+	width: 940px;
 	padding: 0 20px;
 }
 
 /* your styles */
 
+
+
+
+
+#advantages { position: relative; padding-bottom: 65px; background: url("../images/bg_advantages_left.jpg") no-repeat left center, url("../images/bg_advantages_right.jpg") no-repeat right center; background-color: #fffeea; background-size: contain, contain;}
+#advantages:before { content: ""; position: absolute; bottom: 0; left: 0; height: 15px; width: 100%; background-color: rgba(58,63,82,0.5);}
+
+#advantages ol { padding-left: 70px; float: left; list-style-type: none; width: calc(50% - 25px); box-sizing: border-box;}
+#advantages ol.one{ counter-reset: list1; margin-right: 50px;}
+#advantages ol.one li:before { counter-increment: list1; content:"0" counter(list1);}
+#advantages ol.two li:before { counter-increment: list1; content:"0" counter(list1);}
+
+#advantages li { list-style-type: none; padding: 20px 0; position:relative; font-size: 22px;  line-height: normal;  min-height: 30px;}
+#advantages li:before { content: ""; position: absolute; top: 39px; left: -70px; padding: 8px;  color: #ffffff; font-weight: bold; border-radius: 50%; background: #82add5;}
